@@ -38,6 +38,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+
+    margin-bottom: 70px;
 }
 
 .site-wrapper-inner {
@@ -61,6 +63,11 @@ body{
 /*
  * Header
  */
+
+.masthead{
+    position: absolute;
+    top:0px;
+}
 
 .masthead-brand {
     margin-top: 10px;
@@ -149,13 +156,28 @@ body{
 @media (min-width: 768px) {
     /* Pull out the header and footer */
     .masthead {
-        position: fixed;
+        position: absolute;
         top: 0;
     }
     .mastfoot {
         position: fixed;
         bottom: 0;
     }
+
+    .footerBackground{
+      background-color: rgba(0 ,0 ,0 , 0.9);
+      height: 70px;
+      width: 200%;
+
+      position:fixed;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+
+    .footerContent{
+      transform: translatey(10px);
+    }
+
     /* Start the vertical centering */
     .site-wrapper-inner {
         vertical-align: middle;
@@ -173,7 +195,7 @@ body{
     }
 }
 
-.dropdown-menu:hover{
+.dropdown-menu:hover .dropdown-menu{
   display: block;
 }
 
@@ -218,6 +240,12 @@ p{
   font-family: "Poppins", "sans-serif";
 }
 
+.footerFont h3{
+  color: white;
+}
+
+
+
       /* Article formatting */
 
 .main-content{
@@ -233,5 +261,27 @@ article h2{
 }
 
 .articleHeader{
+  border-bottom-style: solid;
+  border-width:3px;
+  border-color: #212121;
+}
 
+.articlePictureFloatRight{
+  float: right;
+}
+
+.articleParagraph{
+  text-align: left;
+}
+
+
+
+
+/*    About Me    */
+
+
+.aboutMePictureOne{
+  width: 323px;
+  margin: 5px;
+  margin-left: 10px;
 }
