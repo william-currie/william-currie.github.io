@@ -712,6 +712,8 @@ hr{
   flex-direction: row;
 }
 
+
+
 li.gallery {
 
 width: 20%;
@@ -728,6 +730,23 @@ width: 100%;
 height: auto;
 }
 
+@media (max-width:760px){
+  .photoGallery{
+    display: flex;
+    flex-direction: column;
+  }
+
+  li.gallery {
+
+  width: 80%;
+  margin: 10px;
+  border: 1px solid #ccc;
+
+  left: 50%;
+  transform: translatex(-50%;)
+  }
+
+}
 
 .youtubeVideo{
   height: 100%;
